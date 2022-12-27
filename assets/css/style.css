@@ -1,0 +1,27 @@
+/* :root color palette */
+
+/* feature first portfolio item */
+
+/* portfolio project images */
+.coming-soon {
+    background-image: url(assets\images\placeholder-portfolio-01.png);
+}
+
+.sorry-come-back-later {
+    background-image: url(assets\images\placeholder-portfolio-02.jpg);
+}
+
+.eventually {
+    background-image: url(assets\images\placeholder-portfolio-03.jpg);
+}
+
+.my-project-here {
+    background-image: url(assets\images\placeholder-portfolio-04.jpg);
+}
+
+.project-space {
+    background-image: url(assets\images\placeholder-portfolio-06.jpg);
+}
+
+/* end portfolio images */
+
