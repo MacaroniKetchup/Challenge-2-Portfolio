@@ -1,27 +1,289 @@
 /* :root color palette */
+:root {
+    --primary: rgb(165, 40, 77);
+    --secondary: rgb(194, 98, 20);
+    --tertiary: rgb(88, 4, 74);
+    --yellow: rgb(255, 230, 0);
+    --darkblue: rgb(35, 29, 75);
+    
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', 'Courier', 'monospace';
+    color: var(--secondary);
+    background: linear-gradient(rgba(0, 0, 0), var(--darkblue));
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+    color: ghostwhite;
+}
+
+header {
+    padding: 15px 6% 15px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background: linear-gradient(var(--tertiary), rgba(0, 0, 0));
+    box-shadow: 0 5px 35px rgba(146, 204, 206, 0.4);
+}
+
+header h1 {
+    color:var(--yellow);
+    background: radial-gradient(var(--darkblue), rgba(0, 0, 0));
+    margin: 30px;
+    font-size: 60px;
+    line-height: 1;
+    border: groove var(--yellow);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 5px 10px;
+    color: var(--secondary);
+    margin-right: 10px;
+    background-image: linear-gradient(270deg, var(--secondary) 0%, var(--secondary) 100%);
+    background-repeat: no-repeat;
+    background-size: 5% 1.5em;
+    background-position: left;
+    transition: all 0.25s ease-in;
+    font-size: 1.4rem;
+}
+
+nav a:hover {
+    background-size: 100% 100%;
+    color: var(--primary);
+}
+
+nav a:last-child {
+    margin-right: 0;
+}
+
+main {
+    margin-top: 20px;
+    margin-bottom: 45px;
+}
+
+.banner {
+    background: rgb(81, 68, 120);
+    background-image: url("../images/neon-cityscape.jpg");
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    min-height: 180px;
+    color: var(--darkblue);
+    padding: 2% 6%;
+    display: flex;
+}
+
+.banner h2 {
+    color: ghostwhite;
+    margin: 0;
+    font-size: 20px;
+    line-height: 1.2;
+    display: inline;
+}
+
+.info-section {
+    max-width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page-section {
+    max-width: 25px 0;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+    background-image: url("../images/neon-cityscape.jpg");
+}
+
+.page-section > h2 {
+    outline: dotted;
+    padding-right: 15px;
+    font-size: 50px;
+    margin-block: 30px;
+    color: var(--yellow);
+}
+
+.page-section p {
+    margin-bottom: 20px
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex-item {
+    border-radius: 15%;
+    background-color: var(--primary);
+    color: var(--secondary);
+    min-height: 150px;
+    max-height: 150px;
+    flex-basis: calc(50% - 1em);
+    display: flex;
+    align-items: flex-end;
+    padding: 0 0 20px 0;
+    margin: 0.5em;
+    text-decoration: none;
+    background-blend-mode: color-burn;
+    background-size: 10%;
+    transition: all 1.5s;
+    font-size: 0.9rem;
+}
 
 /* feature first portfolio item */
 
+.flex-item:first-child {
+    min-height: 400px;
+    min-width: 600px;
+    flex-basis: 100%;
+}
+
+.flex-item:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.flex-item div {
+    background-color: var(--yellow);
+    padding: 8px 10px;
+    border-radius: 10%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.flex-item h3 {
+    font-size: 1.6rem;
+    background-color: var(--yellow);
+    border-radius: 25%;
+}
+
+.contact address {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.contact address a {
+    color: var(--tertiary);
+    padding: 5px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-style: normal;
+    background-image: linear-gradient(270deg, var(--primary) 0%, var (--primary) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: bottom;
+    transition: all 0.25s ease-in;
+    margin: 0 0.2rem 0.1rem;
+    display: inline-block;
+}
+
 /* portfolio project images */
+
+.contact address a:hover {
+    background-size: 100% 88%;
+    color: var(--secondary);
+}
+
 .coming-soon {
-    background-image: url(assets\images\placeholder-portfolio-01.png);
+    background-image: url("../images/placeholder-portfolio-01.png");
 }
 
 .sorry-come-back-later {
-    background-image: url(assets\images\placeholder-portfolio-02.jpg);
+    background-image: url("../images/placeholder-portfolio-02.jpg");
 }
 
 .eventually {
-    background-image: url(assets\images\placeholder-portfolio-03.jpg);
+    background-image: url("../images/placeholder-portfolio-03.jpg");
 }
 
 .my-project-here {
-    background-image: url(assets\images\placeholder-portfolio-04.jpg);
+    background-image: url("../images/placeholder-portfolio-04.jpg");
 }
 
 .project-space {
-    background-image: url(assets\images\placeholder-portfolio-06.jpg);
+    background-image: url("../images/placeholder-portfolio-06.jpg");
 }
 
 /* end portfolio images */
 
+@media screen and (max-width: 980px) {
+    header {
+        padding: 0 0 10px 0;
+        justify-content: center;
+        text-align: center;
+    }
+
+    header h1 {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 10px;
+        font-size: 10vw;
+    }
+
+    header nav {
+        justify-content: center;
+    }
+
+    .page-section > h2 {
+        flex: 0 0 100%;
+    }
+
+    .page-section > h2 {
+        border-right: none;
+        border-bottom: 4px solid var(--primary);
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        text-align: left;
+        font-size: 7vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .flex-item,
+    .flex-item:first-child {
+        flex-basis: 100%;
+    }
+
+    .flex-item:first-child {
+        min-height: 150px;
+    }
+
+    .banner {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .contact address {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
