@@ -30,7 +30,7 @@ As show with place holder images in text in sections through-out the portfolio. 
 ## Deployment
 
 To view my portfolio click on this link below vvv
-- [My Portfolio Link]()
+- [My Portfolio Link](https://macaroniketchup.github.io/Challenge-2-Portfolio/)
 
 ## Features
 - Mobile Device Friendly
