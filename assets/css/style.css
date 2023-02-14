@@ -213,7 +213,8 @@ main {
 }
 
 .coming-soon {
-    background-image: url("../images/placeholder-portfolio-01.png");
+    background-image: url("../images/webdevjobsearch.png");
+    background-size: 100%;
 }
 
 .sorry-come-back-later {
