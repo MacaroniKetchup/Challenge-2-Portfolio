@@ -218,7 +218,8 @@ main {
 }
 
 .sorry-come-back-later {
-    background-image: url("../images/placeholder-portfolio-02.jpg");
+    background-image: url("../images/battle-binder.png");
+    background-size: 100%
 }
 
 .eventually {
