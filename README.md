@@ -11,7 +11,7 @@ As show with place holder images in text in sections through-out the portfolio. 
 
 ##Author
 
-- [@MacaroniKetchup](https://github.com/MacaroniKetchup)
+- [@MacaroniKetchup](https://macaroniketchup.github.io/My-Portfolio/)
 
 ## Color References
 
